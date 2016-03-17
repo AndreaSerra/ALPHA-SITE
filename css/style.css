@@ -158,6 +158,15 @@ animation-delay: 0.7s;
 animation-iteration-count: 1;
 }
 
+.cerchio{
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  border: 3px solid #2F2F2F;
+  background-color: #F8F8F8;
+  margin: auto;
+  margin-top: 100px;
+}
 
 
 /* ANIMATIONS	*/
