@@ -38,6 +38,13 @@
   border: 2px solid red;
 }
 
+.wrap{
+  max-width: 1000px;
+  margin: auto;
+  padding: 0px;
+  position: relative;
+}
+
 
 
 /* LAYOUT	*/
@@ -71,7 +78,7 @@ max-width:100%;
 height:auto;}
 
 .dark-background{
-background-color:#2F2F2F}
+background-color:#2F2F2F;}
 
 .grey-background{
 background-color:#E6E6E6 }
@@ -85,7 +92,7 @@ background-position: center center;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
-background-color: #464646;
+background-color: #2F2F2F;
 	}
 
 
@@ -101,10 +108,15 @@ font-family: 'Zona Pro', sans-serif;
 
 @font-face {
 	font-family: "Mohave";
-	src: url('../fonts/Mohave-Bold.otf') format('opentype');
+	src: url('../fonts/Mohave-SemiBold.otf') format('opentype');
 }
 .mohave {
 font-family: "Mohave", sans-serif;
+}
+
+@font-face {
+	font-family: "Opensans";
+	src: url('../fonts/OpenSans-Regular.ttf') format('opentype');
 }
 
 .opensans {
@@ -119,7 +131,7 @@ font-weight: bold;
 .opensans-justify{
 font-family: 'Open Sans', sans-serif;
 text-align: justify;
-font-size: 15px;
+font-size: 16px;
 }
 
 .bold{
@@ -158,6 +170,12 @@ animation-delay: 0.7s;
 animation-iteration-count: 1;
 }
 
+.page-title {
+color: #2F2F2F;
+text-align: center;
+font-size: 60px;
+}
+
 .cerchio{
   height: 200px;
   width: 200px;
@@ -165,7 +183,8 @@ animation-iteration-count: 1;
   border: 3px solid #2F2F2F;
   background-color: #F8F8F8;
   background-image: url('../immagini/gi5.JPG');
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 100px;
 }
 
