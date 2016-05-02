@@ -43,7 +43,8 @@ $toast-gutter-width: 30px;
 \*-----------------------------------*/
 .grid {
   list-style: none;
-  margin-left: -20px; }
+  /* PRIMA ERA --> margin-left: 20px; */
+  margin-left: 0px; }
 
 .grid__col--2-of-2, .grid__col--3-of-3, .grid__col--4-of-4, .grid__col--5-of-5, .grid__col--6-of-6, .grid__col--8-of-8, .grid__col--12-of-12 {
   width: 100%; }
@@ -248,7 +249,8 @@ $toast-gutter-width: 30px;
   display: inline-block;
   margin-right: -.25em;
   min-height: 1px;
-  padding-left: 20px;
+  /* PRIMA ERA --> padding-left: 20px; */
+  padding-left: 0px;
   vertical-align: top; }
   @media (max-width: 700px) {
     .grid__col {
