@@ -1,34 +1,14 @@
 
 $("a").hide();
+$(".x").hide();
+$(".x2").hide();
+$(".menuOpen").hide();
 
-$(".box").on("click", function (e) {
+$(".boxRight").on("click", function (e) {
       e.preventDefault();
-      $(".menu").toggleClass("menuOpen");
+      $(".menuOpen").slideToggle(500);
       $("a").toggle();
+      $(".linea").toggle();
+      $(".x").toggle();
+      $(".x2").toggle();
 });
-
-
-
-
-//    $( ".perimeter" ).hide();
-//    $( ".menu" ).hide();
-
-
-//    $( ".box" ).click(function() {
-//    $( ".menu" ).slideToggle( "slow", function() {
-//    $( ".perimeter" ).show();
-//$( ".cross" ).show();
-//    });
-
-//    $( ".box" ).click(function() {
-//    $( ".menu" ).slideToggle( "slow", function() {
-//    $( ".perimeter" ).hide();
-//    });
-
-
-//$('.hamburger').on('click', function(e) {
-  // Prevent link from jumping to the top of the page
-  //e.preventDefault();
-  // If menu is already showing, slide it up. Otherwise, slide it down.
-//  $('.menu').toggleClass('slide-down');
-//});
