@@ -9,54 +9,6 @@
   cursor: pointer;
 }
 
-.boxLeft{
-  background: grey;
-  height: 100px;
-  width: 100px;
-  /* margin-bottom: 0px;
-  border: 2px solid black;             */
-  border-radius: 0px;
-}
-
-.logo{
-    height: 50px;
-    width: 50px;
-    border: 1px solid white;
-    border-radius: 25px;
-    position: relative;
-    top: 25%;
-    text-align: center;
-    margin: auto;
-}
-
-.boxRight{
-  background: grey;
-  height: 100px;
-  width: 100px;
-  /* margin-bottom: 0px;
-  border: 2px solid black;             */
-  border-radius: 0px;
-  cursor: pointer;
-
-}
-
-.menuButton{
-    height: 50px;
-    width: 40px;
-    border: 0px solid white;
-    position: relative;
-    top: 25%;
-    cursor: pointer;
-      margin: auto;
-}
-
-.center-y {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align:center;
-  margin: auto;
-}
 
 .beige{
   background: beige;
@@ -105,11 +57,14 @@ border-color:transparent;}
 max-width:100%;
 height:auto;}
 
+.darker-background{
+background-color:#1f1f1f;}
+
 .dark-background{
 background-color:#2F2F2F;}
 
 .grey-background{
-background-color:#E6E6E6 }
+background-color:#555; }
 
 .light-background{
 background-color:#F8F8F8 }
@@ -190,12 +145,12 @@ font-size: 22px;
 }
 
 .home-fix{
-position: relative;
-top: 45%;
-transform: translateY(-50%);
-animation-duration: 1s;
-animation-delay: 0.7s;
-animation-iteration-count: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align:center;
+  margin: auto;
+  width: 100%;
 }
 
 .page-title {
@@ -210,10 +165,16 @@ font-size: 60px;
   border-radius: 100px;
   border: 3px solid #2F2F2F;
   background-color: #F8F8F8;
-  background-image: url('../immagini/gi5.JPG');
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
+  /*background-image:  url('../immagini/gi5.JPG');*/
+  margin: auto;
+}
+
+.center-y-cerchio {
+  position: relative;;
+  top:50%;
+  transform: translateY(-50%);
+  text-align:center;
+  margin: auto;
 }
 
 .linea{
@@ -223,6 +184,7 @@ font-size: 60px;
   border: 1px solid #F8F8F8;
   margin-bottom: 5px;
   text-align: center;
+  z-index: 1;
 }
 
 .x{
@@ -232,7 +194,7 @@ font-size: 60px;
   border: 1px solid #F8F8F8;
   margin: auto;
   transform:rotate(45deg);
-
+  z-index: 1;
 }
 
 .x2{
@@ -243,9 +205,95 @@ font-size: 60px;
   margin: auto;
   transform:rotate(-45deg);
   position: relative;
-top: -2px;
+  top: -2px;
+  z-index: 1;
 }
 
+.boxLeft{
+  background: #2F2F2F;
+  height: 100px;
+  width: 100px;
+  /* margin-bottom: 0px;
+  border: 2px solid black;             */
+  border-radius: 0px;
+}
+
+.logo{
+    font-family: 'Open Sans', sans-serif;
+    color: #F8F8F8;
+    font-size: 55px;
+    font-weight: lighter;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 25%;
+    margin: auto;
+    text-align: center;
+}
+
+.logo1{
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 25px;
+    position: relative;
+    top: 25%;
+    text-align: center;
+    margin: auto;
+}
+
+.boxRight{
+  background: #2F2F2F;
+  height: 100px;
+  width: 100px;
+  /* margin-bottom: 0px;
+  border: 2px solid black;             */
+  border-radius: 0px;
+  cursor: pointer;
+
+}
+
+.menuButton{
+    height: 50px;
+    width: 40px;
+    /*border: 0px solid white;*/
+    position: relative;
+    top: 25%;
+    cursor: pointer;
+      margin: auto;
+}
+
+.center-y {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align:center;
+  margin: auto;
+}
+
+.contact{
+  height:500px;
+  margin: 20px;
+  background-color:white;
+}
+
+.formName{
+  height:50px;
+  margin: 10px;
+  border: 3px solid #2F2F2F;
+}
+
+.formEmail{
+  height:50px;
+  margin: 10px;
+  border: 3px solid #2F2F2F;
+}
+
+.formText{
+  height:350px;
+  margin: 10px;
+  border: 3px solid #2F2F2F;
+}
 
 /* HAMBURGER MENU	*/
 *, *:before, *:after {
@@ -272,8 +320,19 @@ top: -2px;
     background-color: #2F2F2F;
 }
 
+.menu{}
 
+.closeMenu{
+  z-index: -1;
+}
 
+.ba{
+  height: 250px;
+  width: auto;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
 
 
 li a {
@@ -289,9 +348,15 @@ li a {
 /* Change the link color on hover */
 .menuList:hover {
     background-color: #555;
-    font-size: 18px;
+    font-size: 16px;
+    padding: 15px;
 }
 
 .boxRight:hover {
+  background-color: #555;
+}
+
+.cerchio:hover {
+  border: 7px solid #555;
   background-color: #555;
 }
