@@ -1,12 +1,19 @@
 /* TEST	*/
 .box{
-  background: grey;
   height: 100px;
   width: 100px;
-  /* margin-bottom: 0px;
   border: 2px solid black;             */
   border-radius: 0px;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.dark-border{
+  border: 3px solid #2F2F2F;
 }
 
 
@@ -22,6 +29,13 @@
   max-width: 1000px;
   margin: auto;
   padding: 0px;
+  position: relative;
+}
+
+.wrap2{
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
   position: relative;
 }
 
@@ -177,11 +191,18 @@ font-size: 60px;
   margin: auto;
 }
 
+.hamburger{}
+
+.cross{}
+
+.cross2{}
+
 .linea{
   height: 1px;
   width: 40px;
-  border-radius: 0px;
+
   border: 1px solid #F8F8F8;
+  background-color: #F8F8F8;
   margin-bottom: 5px;
   text-align: center;
   z-index: 1;
@@ -192,6 +213,7 @@ font-size: 60px;
   width: 40px;
   border-radius: 0px;
   border: 1px solid #F8F8F8;
+  background-color: #F8F8F8;
   margin: auto;
   transform:rotate(45deg);
   z-index: 1;
@@ -263,6 +285,8 @@ font-size: 60px;
       margin: auto;
 }
 
+.navlink{}
+
 .center-y {
   position: absolute;
   top: 50%;
@@ -272,28 +296,91 @@ font-size: 60px;
 }
 
 .contact{
-  height:500px;
+  height:auto;
   margin: 20px;
-  background-color:white;
+
+}
+
+.form{
+  width: auto;
 }
 
 .formName{
   height:50px;
-  margin: 10px;
+  width: 90%;
+  margin: auto;
   border: 3px solid #2F2F2F;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .formEmail{
   height:50px;
-  margin: 10px;
+  width: 90%;
+  margin: auto;
   border: 3px solid #2F2F2F;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .formText{
-  height:350px;
-  margin: 10px;
+  height:150px;
+  width: 90%;
+  margin: auto;
   border: 3px solid #2F2F2F;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
+
+.formSend{
+  height:50px;
+  width: 25%;
+  margin: auto;
+  border: 3px solid #2F2F2F;
+  background-color: #F8F8F8;
+  display: block;
+  margin-top: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.formSpan{
+  margin-left: 5%;
+}
+
+.iconContact{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.linkedin {
+  background-image:url('../immagini/lkdni.png');
+}
+
+.facebook {
+  background-image:url('../immagini/fbi.png');
+}
+
+.github {
+  background-image:url('../immagini/githubi.png');
+}
+
+.placeholder {
+  background-image:url('../immagini/sketchfabi.png');
+}
+
 
 /* HAMBURGER MENU	*/
 *, *:before, *:after {
@@ -307,6 +394,7 @@ font-size: 60px;
   display: table;
   clear: both;
 }
+
 
 
 .menuList {
@@ -357,6 +445,13 @@ li a {
 }
 
 .cerchio:hover {
-  border: 7px solid #555;
+  border: 0px solid #555;
   background-color: #555;
+}
+
+.formSend:hover {
+  border: 3px solid #555;
+  background-color: #555;
+  color: #F8F8F8;
+
 }

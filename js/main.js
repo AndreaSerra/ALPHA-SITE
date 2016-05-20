@@ -1,25 +1,25 @@
 
-$("a").hide();
-$(".x").hide();
-$(".x2").hide();
-$(".menuOpen").hide();
+$(".navlink").hide();
+//$(".x").hide();
+//$(".x2").hide();
+//$(".menuOpen").hide();
 
 
   $(".boxRight").click( function () {
 
     if ($(".linea").is(":visible")) {
       $(".menuOpen").slideToggle(700);
-      $("a").fadeToggle(700);
-      $(".x").delay(200).fadeToggle(500);
-      $(".x2").delay(200).fadeToggle(500);
+      $(".navlink").delay(500).fadeToggle(300);
+      $(".x").delay(500).fadeToggle(300);
+      $(".x2").delay(500).fadeToggle(300);
       $(".linea").toggle();
     }
     else {
       $(".menuOpen").slideToggle(700);
-      $("a").fadeToggle(700);
+      $(".navlink").fadeToggle(300);
       $(".x").toggle();
       $(".x2").toggle();
-      $(".linea").delay(200).fadeToggle(500);
+      $(".linea").delay(500).fadeToggle(300);
     }
 
   });
@@ -29,10 +29,10 @@ $(".menuOpen").hide();
 $(".closeMenu").click( function () {
   if ($(".x").is(":visible")){
     $(".menuOpen").slideToggle(700);
-    $("a").fadeToggle();
+    $(".navlink").fadeToggle(300);
     $(".x").toggle();
     $(".x2").toggle();
-    $(".linea").delay(200).fadeToggle(500);
+    $(".linea").delay(500).fadeToggle(300);
   }
 
 });
